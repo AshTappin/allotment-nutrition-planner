@@ -67,6 +67,44 @@
   max-height: 50vh;
 }
 
+textarea {
+  background-color: rgba(0,0,0, 0.1);
+  font: inherit;
+  color: #fff;
+  padding: 1rem;
+  border: 3px solid #fff;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: rgba(0,0,0, 0.2);
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: inherit;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-.3rem);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+}
+
+button:hover::after {
+   transform: scaleX(1.4) scaleY(1.6);
+   opacity: 0;
+}
+
+textarea::placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
 .nutrient-info {
   margin-bottom: 1rem;
   margin-left: .8rem;

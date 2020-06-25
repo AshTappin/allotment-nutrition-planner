@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <div className="heading">Allotment Nutrition Planner</div>
+          <div className="heading">Veg Growing Nutrition Planner</div>
         <VegetableContainerInput/>
       </header>
     </div>
