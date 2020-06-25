@@ -43,16 +43,45 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  backface-visibility: hidden;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
-  
 }
 
 .nutrients-results-container {
   text-align: left;
   color: white;
- padding-left: 3rem; 
+  margin-left: 3rem;
+  animation: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  background-color: rgba(0,0,0, 0.05);
+  padding: 1rem;
+}
+
+.nutrient-info {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0, 0.1);
+  border: 3px solid #fff;
+ }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  30% {
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
