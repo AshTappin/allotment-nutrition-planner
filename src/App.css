@@ -36,11 +36,23 @@
   transform: translate(-50%, -50%);
 }
 
-.input-container {
+.container {
   top: 55%;
-  left: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
   position: absolute;
   display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
   flex-direction: column;
-  transform: translate(-50%, -50%);
+  
+}
+
+.nutrients-results-container {
+  text-align: left;
+  color: white;
+ padding-left: 3rem; 
 }
