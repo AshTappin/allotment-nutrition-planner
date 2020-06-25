@@ -14,25 +14,27 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient(to right bottom,
+  rgba(189, 208, 156, 0.8),
+  rgba(102, 141, 60, 0.8)), url("./img/allotment_greenhouse.jpg");
+  height: 95vh;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0,100% 80vh, 0 90vh);
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  position: absolute;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container {
+  top: 40%;
+  left: 20%;
+  position: absolute;
 }
