@@ -6,7 +6,7 @@ const VegetableInput = (props) => {
     
     return (<div className="input-container">
         <textarea className="plants" rows="10" cols="50"
-                  placeholder="What are you planting?"
+                  placeholder="What are you growing?"
                   value={plants.join("\n")}
                   onChange={(evt) => {
                       setPlants(evt.target.value.split(/\n/));  
